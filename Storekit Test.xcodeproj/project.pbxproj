@@ -14,6 +14,8 @@
 		651BB95A1E902F82002EFC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651BB9581E902F82002EFC7B /* LaunchScreen.storyboard */; };
 		651BB9651E902F82002EFC7B /* Storekit_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB9641E902F82002EFC7B /* Storekit_TestTests.swift */; };
 		651BB9701E902F82002EFC7B /* Storekit_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB96F1E902F82002EFC7B /* Storekit_TestUITests.swift */; };
+		651BB97E1E903257002EFC7B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB97D1E903257002EFC7B /* PurchaseViewController.swift */; };
+		651BB9811E9033C0002EFC7B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651BB9801E9033C0002EFC7B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		651BB96B1E902F82002EFC7B /* Storekit TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Storekit TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BB96F1E902F82002EFC7B /* Storekit_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storekit_TestUITests.swift; sourceTree = "<group>"; };
 		651BB9711E902F82002EFC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651BB97D1E903257002EFC7B /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		651BB9801E9033C0002EFC7B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651BB9811E9033C0002EFC7B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				651BB9631E902F82002EFC7B /* Storekit TestTests */,
 				651BB96E1E902F82002EFC7B /* Storekit TestUITests */,
 				651BB94D1E902F81002EFC7B /* Products */,
+				651BB97F1E9033C0002EFC7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,7 @@
 				651BB9561E902F82002EFC7B /* Assets.xcassets */,
 				651BB9581E902F82002EFC7B /* LaunchScreen.storyboard */,
 				651BB95B1E902F82002EFC7B /* Info.plist */,
+				651BB97D1E903257002EFC7B /* PurchaseViewController.swift */,
 			);
 			path = "Storekit Test";
 			sourceTree = "<group>";
@@ -123,6 +130,14 @@
 				651BB9711E902F82002EFC7B /* Info.plist */,
 			);
 			path = "Storekit TestUITests";
+			sourceTree = "<group>";
+		};
+		651BB97F1E9033C0002EFC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				651BB9801E9033C0002EFC7B /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +210,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 56SYM3NGXF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					651BB95F1E902F82002EFC7B = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -264,6 +284,7 @@
 			files = (
 				651BB9521E902F81002EFC7B /* ViewController.swift in Sources */,
 				651BB9501E902F81002EFC7B /* AppDelegate.swift in Sources */,
+				651BB97E1E903257002EFC7B /* PurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +533,7 @@
 				651BB9761E902F82002EFC7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		651BB9771E902F82002EFC7B /* Build configuration list for PBXNativeTarget "Storekit TestTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +542,7 @@
 				651BB9791E902F82002EFC7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		651BB97A1E902F82002EFC7B /* Build configuration list for PBXNativeTarget "Storekit TestUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +551,7 @@
 				651BB97C1E902F82002EFC7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
